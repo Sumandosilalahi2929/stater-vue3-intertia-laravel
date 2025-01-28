@@ -16,9 +16,12 @@
         @else
            
         @endif
+
+        @inertiaHead
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-laravelflow">
+        @inertia
+        {{-- <nav class="navbar navbar-expand-lg navbar-laravelflow">
           <div class="container">
             <a class="navbar-brand" href="/"><strong>Stackoverflow</strong>Clone</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -293,6 +296,6 @@
               </div>
             </div>
           </div>
-        </main>
+        </main> --}}
       </body>
 </html>
