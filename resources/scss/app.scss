@@ -1,0 +1,268 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+body {
+    font-family: "figtree", sans-serif;
+}
+
+.navbar-laravelflow {
+    background-color: #fff;
+    border-top: 3px solid orange;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-underline {
+    gap: .5rem;
+}
+
+.page-header {
+    font-size: 1.8rem;
+}
+
+.post-item {
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+
+.question-summary-stats {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    font-size: 13px;
+    gap: 6px;
+    width: 100px;
+    margin-right: 16px;
+}
+
+.stats-inline {
+    flex-direction: row;
+    width: auto;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    font-size: 13px;
+    gap: 6px;
+    margin-bottom: 4px;
+    margin-right: 16px;
+}
+
+.vote-col {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.post-col {
+    position: relative;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-left: 1rem;
+}
+
+.stats-item {
+    align-items: center;
+    display: inline-flex;
+    gap: .3em;
+    justify-content: center;
+    white-space: nowrap;
+    font-weight: 500;
+    padding: 3px 6px;
+}
+
+.stats-item.has-answers {
+    border: 1px solid hsl(148,70%,31%);
+    color: hsl(148,70%,31%);
+}
+
+.stats-item.has-answers.has-accepted-answer {
+    border: 1px solid hsl(148,70%,31%);
+    background-color: hsl(148,70%,31%);
+    color: #fff;
+}
+
+.question-summary-content {
+    position: relative;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.question-summary-title {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.question-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.question-meta {
+    font-size: 15px;
+}
+
+.post-action {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.3s linear;
+}
+
+.actionable:hover .post-action{
+    visibility: visible;
+    opacity: 1;
+}
+.answer-header {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.question-summary-title a, .question-summary-author a {
+    text-decoration: none;
+}
+
+.question-summary-author {
+    font-size: .8rem;
+}
+
+.avatar-sm img {
+    margin-right: 3px;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.avatar-md img {
+    margin-right: 3px;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+}
+
+.fs-5 {
+    font-size: 1.3rem;
+}
+
+ul.tags-inline, ul.tags-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tags-inline li {
+    display: inline;
+}
+
+.tag {
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    font-weight: bold;
+    font-size: 12px;
+    background: #f1f2f3;
+    color: #191e21;
+    padding: 4px 8px;
+    border-radius: 10%;
+}
+
+.tag:hover {
+    background-color: #d3d3d3;
+}
+
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon-lg {
+    width: 3em;
+    height: 3em;
+}
+
+.icon-gray {
+    color: #d3d3d3;
+}
+
+.icon-stone {
+    color: #6c757d;
+}
+
+.answer-accepted svg {
+    color: #18864B;
+}
+
+.question-bookmarked svg {
+    color: orange;
+}
+
+.bi-caret-up-fill, .bi-caret-down-fill {
+    width: 2em;
+    height: 2em;
+}
+
+.votes-count {
+    font-weight: 700;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.author {
+    text-align: left;
+    vertical-align: top;
+    width: 200px;
+}
+
+.author-info {
+    box-sizing: border-box;
+    padding: 5px 6px 7px 7px;
+    color: #636b74;
+    font-size: 13px;
+}
+
+.owner {
+    border-radius: 4px;
+    background-color: #edf5fd;
+}
+
+.related-item {
+    margin-bottom: 12px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.related-item a, .author-info a {
+    text-decoration: none;
+}
+
+.answer-votes {
+    margin-top: 3px;
+    padding: 3px 0;
+    width: 40px;
+    font-size: 90%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color:  #F1F2F3;
+    color: #3B4045;
+    white-space: nowrap;
+}
+
+.related-item .answer-accepted {
+    background-color: #18864B;
+    color: #fff;
+}
+
+.preview-body {
+    min-height: 182px;
+}
