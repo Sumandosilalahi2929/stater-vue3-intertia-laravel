@@ -8,6 +8,7 @@ defineProps({
         required: true
     }
 })
+
 </script>
 
 
@@ -18,13 +19,13 @@ defineProps({
                           <div class="stats-item vote"><strong>{{ question.votes_count }}</strong> vote</div>
                           <div class="stats-item status has-answers"><strong>{{ question.answers_count }}</strong> answer</div>
                           <div class="stats-item view">
-                            {{ question.views_count }} views
+                            {{ question.views_count }} 
                           </div>
                         </div>
                         <div class="question-summary-content actionable">
                           <div class="d-flex align-items-center">
                             <h3 class="mt-0 question-summary-title">
-                              <Link :href="route('question.show', question.slug)">{{ question.title }}</Link>
+                                <Link :href="route('question.show', question.slug)">{{ question.title }}</Link>
                             </h3>
                             <div class="ml-auto"></div>
                           </div>
@@ -37,10 +38,9 @@ defineProps({
                             </ul>
                             <div class="question-summary-author">
                               <a href="#" class="avatar-sm">
-                                <img src="https://i.pravatar.cc/150?img=30" size="16" alt="" srcset="">
+                                <img :src="question.user.avatarUrl" size="16" alt="" srcset="">
                                 {{ question.user.name }}
-                              </a>
-                              <span class="text-muted">asked <time :datetime="question.created_at.machine">{{ question.created_at.human }}</time></span>
+                              </a> <span class="text-muted">asked <time :datetime="question.created_at.machine">{{ question.created_at.human }}</time></span>
                             </div>
                           </div>
                           <div class="post-action">
