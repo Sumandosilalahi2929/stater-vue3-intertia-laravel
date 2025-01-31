@@ -1,4 +1,5 @@
 <script setup>
+import { Head } from "@inertiajs/vue3";
 import AppLayout from '../../Layouts/AppLayout.vue';
 import Author from '../../Components/Author.vue';
 
@@ -11,6 +12,7 @@ defineProps({
 </script>
 
 <template>
+    <Head :title="question.title" />
 
 <AppLayout>
     <div class="container">
