@@ -33,7 +33,7 @@ import { Link } from "@inertiajs/vue3";
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="login.html" class="btn btn-outline-secondary">Log in</a>
+                  <Link :href="route('login')" class="btn btn-outline-secondary me-2">Log in</Link>
                   <Link :href="route('register')" class="btn btn-primary">Sign up</Link>
                 </li>
               </ul>
