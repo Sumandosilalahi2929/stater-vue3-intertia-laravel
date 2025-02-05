@@ -49,8 +49,8 @@
               </div>
             </div>
           </div>
-          <Modal id="question-modal" title="Ask Question">
-            <QuestionForm />
+          <Modal id="question-modal" title="Ask Question" size="large" scrollable>
+            <QuestionForm @success="hideModal" />
           </Modal>
     </AppLayout>
 
